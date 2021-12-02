@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'rudabold';
+    src: url('Ruda-Bold-webfont.eot');
+    src: url('Ruda-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Ruda-Bold-webfont.woff2') format('woff2'),
+         url('Ruda-Bold-webfont.woff') format('woff'),
+         url('Ruda-Bold-webfont.ttf') format('truetype'),
+         url('Ruda-Bold-webfont.svg#rudabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

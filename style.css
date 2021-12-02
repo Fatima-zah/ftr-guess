@@ -1,0 +1,48 @@
+@font-face {
+    font-family: ruda;
+    src: url(Ruda-Black-webfont.woff);
+}
+body{
+    background-image: url(back.jpg);
+    background-size: cover;
+    font-family: ruda;
+}
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.start h1{
+    font-size: 39px;
+    color: #0CBBCA;
+    margin-top: 50px;
+}
+ p{
+    text-align: center;
+    color: #ffffff;
+    padding: 0 300px;
+    font-size: 24px;
+    text-shadow:2px 2px #92b8ff;
+    margin-top: 90px;
+    
+}
+.start input{
+    width: 190px;
+    height: 70px;
+    background: rgba(141, 12, 202, 0.35);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #0CBBCA;
+    margin-top: 90px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: ruda;
+    src: url(Ruda-Black-webfont.woff);
+}
+.start input:hover{
+    background-color: #92b8ff;
+    color: #0c6870;
+    
+}

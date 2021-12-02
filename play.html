@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="play.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="play">
+     <img src="hurts.png">
+     <p class="tent"><span id="numbr">10</span>/10</p>
+    </div>
+
+     <div id="box">
+        <!-- <span id="numCOLOR" style="display:none">0</span> -->
+        <p class="between">ENTER A NUMBER <br> BETWEEN 0 AND 100</p>
+        <input id="userInput" ><br>
+        <button id="btn" onclick="">Enter</button>
+      </div>
+     <div id="win">
+        <img class="img-win" src="WIIN.jpg" >
+     </div>
+     <div id="game-OVER">
+        <img class="img-OVER" src="oveer.jpg" >
+     </div>
+      <script>
+          var num = document.getElementById('userInput');
+          var n=Math.floor(Math.random()*100);
+          var tires=10;
+          var try_par=document.getElementById('numbr');
+          
+        function random(){
+            if(tires<=1)
+            {
+                // document.getElementById("box").style.display="none";
+                // document.getElementById("play").style.display="none";
+                document.getElementById("game-OVER").style.display="blocK";
+                try_par.innerHTML=tires;
+            }
+            else{
+                if(num.value==n){
+                    if(tires>=8)
+                    {   
+                        // alert("gennie");
+                        document.getElementById("win").style.display="block"
+                        
+                        
+                    }
+                    else
+                    {
+                        // alert("wiin");
+                        document.getElementById("win").style.display="blocK";
+                        
+                       
+                    }
+                }
+                else{
+                if(num.value<n)
+                {
+                   
+                    tires--;
+                    try_par.innerHTML=tires
+                     alert("numbre a petit");
+                }
+                else{
+                    tires--;
+                    try_par.innerHTML=tires
+                    alert("numbre grande");
+
+                }
+            }
+        }
+    
+        }
+     
+        btn.addEventListener('click', random);
+    </script>
+</body>
+</html>

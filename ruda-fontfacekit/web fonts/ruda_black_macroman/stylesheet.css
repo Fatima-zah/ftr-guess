@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'rudablack';
+    src: url('Ruda-Black-webfont.eot');
+    src: url('Ruda-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Ruda-Black-webfont.woff2') format('woff2'),
+         url('Ruda-Black-webfont.woff') format('woff'),
+         url('Ruda-Black-webfont.ttf') format('truetype'),
+         url('Ruda-Black-webfont.svg#rudablack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
